@@ -1,6 +1,6 @@
 {
-  "name": "uniclip-desktop",
-  "productName": "uniclip-desktop",
+  "name": "clipmir-desktop",
+  "productName": "clipmir-desktop",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "./index.js",
@@ -32,7 +32,7 @@
         "packageManager": "yarn"
       },
       "electronWinstallerConfig": {
-        "name": "uniclip_desktop"
+        "name": "clipmir_desktop"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -42,7 +42,7 @@
       },
       "windowsStoreConfig": {
         "packageName": "",
-        "name": "uniclipdesktop"
+        "name": "clipmir"
       }
     }
   },

@@ -1,7 +1,7 @@
 import SSDP from 'node-ssdp';
 
 export const usnRegex = /uuid:([a-f0-9-]+)::urn:(.+)/;
-export const serviceType = 'urn:schemas-uniclip-com:service:ConnectionManager:1';
+export const serviceType = 'urn:schemas-clipmir-com:service:ClipboardMirrorer:1';
 
 export default ({ uuid, port }) => {
   let udn = `uuid:${uuid}`;

@@ -5,6 +5,15 @@
     "import/no-extraneous-dependencies": 0,
     "import/no-unresolved": [2, { "ignore": ["electron"] }],
     "linebreak-style": 0,
-    "react/prefer-stateless-function": 0
+    "react/prefer-stateless-function": 0,
+    "prefer-const": "off",
+    "brace-style": "off",
+    "arrow-parens": "off",
+    "arrow-body-style": "off",
+    "react/prop-types": "off",
+    "no-console": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "max-len": "off",
+    "no-plusplus": "off"
   }
 }

@@ -4,9 +4,19 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { AppContainer } from 'react-hot-loader';
 import reducers from './reducers';
+import { addAliveService, addEstablishedConnection } from './actions';
+import server from './server';
 import App from './components/App';
 
 let store = createStore(reducers);
+
+server.on('aliveService', data => {
+  store.dispatch(addAliveService(data));
+});
+
+server.on('establishedConnection', uuid => {
+  store.dispatch(addEstablishedConnection(uuid));
+});
 
 let render = () => {
   ReactDOM.render(
@@ -15,7 +25,7 @@ let render = () => {
         <App />
       </Provider>
     </AppContainer>,
-    document.getElementById('App')
+    document.getElementById('App') // eslint-disable-line
   );
 };
 

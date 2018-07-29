@@ -1,5 +1,15 @@
-let aliveServices = (state = {}, action) => {
-  return {};
-};
+export default (state = {}, { type, id, name }) => {
+  switch (type) {
+    case 'ADD_ALIVE_SERVICE':
+      return {
+        ...state,
+        [id]: {
+          id,
+          name,
+        },
+      };
 
-export default aliveServices;
+    default:
+      return state;
+  }
+};

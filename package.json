@@ -1,9 +1,9 @@
 {
-  "name": "uniclip2-desktop",
-  "productName": "uniclip2-desktop",
+  "name": "uniclip-desktop",
+  "productName": "uniclip-desktop",
   "version": "1.0.0",
   "description": "My Electron application description",
-  "main": "src/index.js",
+  "main": "./index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -32,7 +32,7 @@
         "packageManager": "yarn"
       },
       "electronWinstallerConfig": {
-        "name": "uniclip2_desktop"
+        "name": "uniclip_desktop"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -42,23 +42,29 @@
       },
       "windowsStoreConfig": {
         "packageName": "",
-        "name": "uniclip2desktop"
+        "name": "uniclipdesktop"
       }
     }
   },
   "dependencies": {
+    "clipboardy": "^1.2.3",
     "electron-compile": "^6.4.3",
     "electron-devtools-installer": "^2.1.0",
     "electron-squirrel-startup": "^1.0.0",
+    "get-port-sync": "^1.0.0",
+    "jayson": "^2.0.6",
+    "node-ssdp": "^3.3.0",
     "react": "^16",
     "react-dom": "^16",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "electron-forge": "^5.2.2",

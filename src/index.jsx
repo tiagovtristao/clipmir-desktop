@@ -6,7 +6,7 @@ import { AppContainer } from 'react-hot-loader';
 import reducers from './reducers';
 import { addAliveService, addEstablishedConnection } from './actions';
 import server from './server';
-import App from './components/App';
+import App from './App';
 
 let store = createStore(reducers);
 

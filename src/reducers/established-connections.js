@@ -8,7 +8,9 @@ export default (state = [], { type, id }) => {
         ];
       }
 
-    default: // eslint-disable-line
+      return state;
+
+    default:
       return state;
   }
 };

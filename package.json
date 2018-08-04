@@ -2,7 +2,7 @@
   "name": "clipmir-desktop",
   "productName": "clipmir-desktop",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "A cross platform desktop app for mirroring the clipboard between all synced devices in the same network",
   "main": "./index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -12,7 +12,7 @@
     "lint": "eslint --cache --color --ext .jsx,.js src"
   },
   "keywords": [],
-  "author": "tiagovtristao",
+  "author": "Tiago Tristao (https://github.com/tiagovtristao)",
   "license": "MIT",
   "config": {
     "forge": {
@@ -47,7 +47,6 @@
     }
   },
   "dependencies": {
-    "clipboardy": "^1.2.3",
     "electron-compile": "^6.4.3",
     "electron-devtools-installer": "^2.1.0",
     "electron-squirrel-startup": "^1.0.0",

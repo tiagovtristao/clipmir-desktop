@@ -2,7 +2,7 @@ import EventEmitter from 'events';
 import uuidv4 from 'uuid/v4';
 import jayson from 'jayson';
 import getPortSync from 'get-port-sync';
-import clipboardy from 'clipboardy';
+import { clipboard } from 'electron';
 import ssdp, { usnRegex, serviceType } from './ssdp';
 import objectHas from './utils/objectHas';
 
@@ -46,7 +46,7 @@ function handleConnectRequest({ uuid }) {
 function handleSetClipboardValueRequest({ uuid, value }) {
   console.log(Date.now(), `${processUUID} has new value '${value}' from ${uuid}`);
 
-  clipboardy.writeSync(value);
+  clipboard.writeText(value);
   previousClipboardValue = value; // This avoids the just-received value from being sent out
 
   return true;
@@ -141,7 +141,7 @@ ssdpInstance.server.on('advertise-bye', (...args) => {
 
 // Poll the clipboard indefinitely for new values and multicast them
 setInterval(() => {
-  let currentValue = clipboardy.readSync();
+  let currentValue = clipboard.readText();
 
   if (currentValue !== previousClipboardValue && previousClipboardValue !== null) {
     Object.keys(establishedConnections).forEach(uuid => {

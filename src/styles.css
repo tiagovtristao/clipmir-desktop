@@ -1,0 +1,28 @@
+* {
+  font-family: 'Open Sans', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  color: #97989b;
+  background-color: #222631;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.no-list {
+  text-align: center;
+}
+
+.list li {
+  text-align: center;
+  cursor: pointer;
+}

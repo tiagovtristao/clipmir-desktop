@@ -3,13 +3,19 @@ import Indicator from './Indicator';
 
 export default class List extends React.Component {
   render() {
-    const { list, onItemClick } = this.props;
+    const { emptyListText, list, onItemClick } = this.props;
+
+    if (!list.length) {
+      return (
+        <p className="no-list">{emptyListText}</p>
+      );
+    }
 
     return (
-      <ul>
+      <ul className="list">
         { list.map(({ id, name, active }) => (
           <li key={id} onClick={() => onItemClick(id)}>
-            <Indicator color={active ? '#009b00' : '#a8a8a8'} /> {name}
+            <Indicator color={active ? '#87ffbd' : '#33504b'} /> {name}
           </li>
         )) }
       </ul>

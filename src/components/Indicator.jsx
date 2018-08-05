@@ -7,7 +7,7 @@ export default (props) => (
       width: '10px',
       height: '10px',
       borderRadius: '5px',
-      backgroundColor: props.color || '#009b00',
+      backgroundColor: props.color,
     }}
   />
 );

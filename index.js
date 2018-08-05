@@ -13,11 +13,10 @@ if (isDevMode) enableLiveReload({ strategy: 'react-hmr' });
 const createWindow = async () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 300,
-    height: 200,
+    width: 420,
+    height: 160,
     title: 'Clipmir',
-    backgroundColor: '#ffffff',
-    icon: './assets/icon.png',
+    backgroundColor: '#222631',
     center: true,
     resizable: isDevMode,
     maximizable: false,

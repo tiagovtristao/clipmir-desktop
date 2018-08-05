@@ -3,6 +3,29 @@ Clipmir (Currently only for testing!)
 
 A cross platform desktop app for mirroring the clipboard between all synced devices in the same network.
 
+Development
+-----------
+
+```bash
+git clone https://github.com/tiagovtristao/clipmir-desktop.git
+cd clipmir-desktop
+yarn install (or npm install)
+yarn start (or npm run start)
+```
+
+Build
+-----
+
+```bash
+git clone https://github.com/tiagovtristao/clipmir-desktop.git
+cd clipmir-desktop
+yarn install (or npm install)
+yarn make (or npm run make)
+```
+> **NOTE**
+> 
+> `yarn make` will produce a build based on your arch and OS. See https://electronforge.io/cli/make if you want to build for a different arch and/or OS.
+
 Motivation
 ----------
 
@@ -20,7 +43,7 @@ How it works
 * At this point, the app in each device will list the other device;
 * In order to have the devices' clipboards synced, both devices have to click in each other's name in the list to establish a bi-directional flow - a green circle will appear indicating that both devices agreed to talk to each other;
 * If a device tries to connect with another one, but the target device doesn't connect back (by clicking on the device name in the list), then no connection is established and nothing happens;
-* Multiple devices are supported.
+* Several devices can be connected at the same time, allowing one device to broadcast its new clipboard value to everyone connected to it.
 
 Limitations
 -----------
@@ -30,11 +53,11 @@ Limitations
 Current State
 -------------
 
-This is the first minimal working version, and should be used for testing only! The features missing to make it to a secure and stable version stage are:
+This is the first minimal working version, and should be used for testing only! The features missing to make it to a secure and stable version are:
 
 * The current advertised name by a device is a UUID, which makes it difficult to know who that user is if there are more than 2 advertisers in the network. There should be an option to allow the user to set its discovery name;
 * There isn't a visual indicator in the UI when someone tries to connect to you and vice versa;
-* There's no disconnect option from a device, unless you quit the app;
+* There's no disconnect option from a device, unless you restart the app;
 * The state of a device that you are connected to is not reflected on the UI when it goes offline;
 * Move server initialisation from the rendered process into the main process (Electron);
 * The JSON RPC server should be serving HTTPS instead HTTP.
@@ -42,9 +65,9 @@ This is the first minimal working version, and should be used for testing only! 
 Future
 ------
 
-The basic functionality is up and running which covers the initial goal of this project. There are no plans to tackle the issues mentioned in "Current State", unless someone joins in or finds this project useful to his/her needs.
+The basic functionality is up and running which covers the initial goal of this project. There are no plans to tackle the issues mentioned in "Current State", unless there are people interested. By the way, you are more than welcome to make pull requests :-)
 
-Mobile support was initially considered too, so that users could have their computer and phone's clipboards also synced. And although this project targets desktop devices only, most of the code could probably be ported to React Native.
+Mobile support was initially considered too, so that users could have their computer and phone's clipboards also synced. And although this project targets desktop devices only, most of the code could probably be ported to React Native to achieve it.
 
 License
 -------

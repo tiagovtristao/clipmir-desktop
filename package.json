@@ -4,7 +4,10 @@
   "version": "0.0.1",
   "description": "A cross platform desktop app for mirroring the clipboard between all synced devices in the same network",
   "license": "MIT",
-  "repository": "github:tiagovtristao:clipmir-desktop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagovtristao/clipmir-desktop.git"
+  },
   "bugs": "https://github.com/tiagovtristao/clipmir-desktop/issues",
   "keywords": [
     "clipboard",

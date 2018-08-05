@@ -3,7 +3,7 @@
   "productName": "clipmir-desktop",
   "version": "0.0.1",
   "description": "A cross platform desktop app for mirroring the clipboard between all synced devices in the same network",
-  "main": "./index.js",
+  "main": "./app/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",

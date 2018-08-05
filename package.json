@@ -1,7 +1,7 @@
 {
   "name": "clipmir-desktop",
   "productName": "clipmir-desktop",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A cross platform desktop app for mirroring the clipboard between all synced devices in the same network",
   "main": "./index.js",
   "scripts": {

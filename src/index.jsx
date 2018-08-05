@@ -6,15 +6,16 @@ import { AppContainer } from 'react-hot-loader';
 import reducers from './reducers';
 import { addAliveService, addEstablishedConnection } from './actions';
 import server from './server';
+import { ALIVE_SERVICE, ESTABLISHED_CONNECTION } from './constants/server-notifications';
 import App from './App';
 
 let store = createStore(reducers);
 
-server.on('aliveService', data => {
+server.on(ALIVE_SERVICE, data => {
   store.dispatch(addAliveService(data));
 });
 
-server.on('establishedConnection', uuid => {
+server.on(ESTABLISHED_CONNECTION, uuid => {
   store.dispatch(addEstablishedConnection(uuid));
 });
 

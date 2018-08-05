@@ -5,6 +5,7 @@ import getPortSync from 'get-port-sync';
 import { clipboard } from 'electron';
 import ssdp, { usnRegex, serviceType } from './ssdp';
 import objectHas from './utils/objectHas';
+import { ALIVE_SERVICE, ESTABLISHED_CONNECTION } from './constants/server-notifications';
 
 // Used to broacast specific server events to the outside
 const emitter = new EventEmitter();
@@ -34,7 +35,7 @@ function handleConnectRequest({ uuid }) {
     delete issuedConnections[uuid];
     establishedConnections[uuid] = {};
 
-    emitter.emit('establishedConnection', uuid);
+    emitter.emit(ESTABLISHED_CONNECTION, uuid);
   }
   else {
     receivedConnections[uuid] = {};
@@ -125,7 +126,7 @@ ssdpInstance.server.on('advertise-alive', (headers, body) => {
 
       console.log(Date.now(), `New alive service registered at ${uuid}`, aliveServices[uuid]);
 
-      emitter.emit('aliveService', {
+      emitter.emit(ALIVE_SERVICE, {
         uuid,
         name,
       });
@@ -174,7 +175,7 @@ export const connectToService = uuid => {
 
       console.log(Date.now(), `Connection established between ${processUUID} and ${uuid}`);
 
-      emitter.emit('establishedConnection', uuid);
+      emitter.emit(ESTABLISHED_CONNECTION, uuid);
     }
     else {
       issuedConnections[uuid] = {};

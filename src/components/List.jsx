@@ -1,4 +1,5 @@
 import React from 'react';
+import Indicator from './Indicator';
 
 export default class List extends React.Component {
   render() {
@@ -8,7 +9,7 @@ export default class List extends React.Component {
       <ul>
         { list.map(({ id, name, active }) => (
           <li key={id} onClick={() => onItemClick(id)}>
-            { active ? `${name} o` : name }
+            <Indicator color={active ? '#009b00' : '#a8a8a8'} /> {name}
           </li>
         )) }
       </ul>

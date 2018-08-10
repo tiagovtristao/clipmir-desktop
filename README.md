@@ -1,7 +1,19 @@
 Clipmir (Currently only for testing!)
 =====================================
 
-A cross platform desktop app for mirroring the clipboard between all synced devices in the same network.
+A cross platform Electron app for mirroring the clipboard between all synced devices in the same network.
+
+Demo
+----
+
+![Demo](https://github.com/tiagovtristao/clipmir-desktop/demo.gif)
+
+Download
+--------
+
+* Windows (x64): [Squirrel](https://bintray.com/tiagovtristao/windows/download_file?file_path=clipmir-desktop-setup.zip), [MSI](https://bintray.com/tiagovtristao/windows/download_file?file_path=clipmir-desktop-msi.zip)
+* MacOS (x64): [ZIP](https://bintray.com/tiagovtristao/macos/download_file?file_path=clipmir-desktop-darwin-x64-0.0.1.zip)
+* Linux (x64): [DEB](https://bintray.com/tiagovtristao/linux/download_file?file_path=clipmir-desktop_0.0.1_amd64.deb), [RPM](https://bintray.com/tiagovtristao/linux/download_file?file_path=clipmir-desktop-0.0.1.x86_64.rpm)
 
 Development
 -----------
@@ -68,6 +80,8 @@ Future
 The basic functionality is up and running which covers the initial goal of this project. There are no plans to tackle the issues mentioned in "Current State", unless there are people interested. By the way, you are more than welcome to make pull requests :-)
 
 Mobile support was initially considered too, so that users could have their computer and phone's clipboards also synced. And although this project targets desktop devices only, most of the code could probably be ported to React Native to achieve it.
+
+Electron could be switched by native APIs since it's overkill for such a small program.
 
 License
 -------

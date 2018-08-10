@@ -6,7 +6,7 @@ A cross platform Electron app for mirroring the clipboard between all synced dev
 Demo
 ----
 
-![Demo](https://github.com/tiagovtristao/clipmir-desktop/demo.gif)
+![Demo](demo.gif)
 
 Download
 --------

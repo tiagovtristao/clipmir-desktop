@@ -45,7 +45,7 @@ Every now and then, I feel the need of copying some text into the clipboard and 
 
 Truth is, although I used to need this functionality more in the past, I rarely need it nowadays. So, would I go about installing an app in each device where I need this, when I might not use it everyday? Probably not, as any of the solutions mentioned above would do just fine.
 
-So why did I go about building a first working version (currenly only for testing!), when there might already be similar solutions out there as well? Well, I did it for fun, knowing that I'd learn new things along the way too. Also, there might be someone out there who this project could pick his/her interest.
+So why did I go about building a first working version (currenly only for testing!), when there might already be similar solutions out there as well? Well, I did it for fun, knowing that I'd learn new things along the way too. Also, there might be someone out there who this project could pique his/her interest.
 
 How it works
 ------------

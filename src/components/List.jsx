@@ -5,13 +5,9 @@ export default class List extends React.Component {
   render() {
     const { emptyListText, list, onItemClick } = this.props;
 
-    if (list.length === 0) {
-      return (
-        <p className="no-list">{emptyListText}</p>
-      );
-    }
-
-    return (
+    return (list.length === 0) ? (
+      <p className="no-list">{emptyListText}</p>
+    ) : (
       <ul className="list">
         { list.map(({ id, name, active }) => (
           <li key={id} onClick={() => onItemClick(id)}>

@@ -1,5 +1,5 @@
 export default (obj, keys) => {
-  if (typeof obj !== 'object' || typeof obj === 'null') {
+  if (typeof obj !== 'object' || obj === null) {
     return false;
   }
 

@@ -6,6 +6,13 @@
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/7zip/-/7zip-0.0.6.tgz#9cafb171af82329490353b4816f03347aa150a30"
 
+"@babel/runtime@^7.9.2":
+  version "7.22.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.6.tgz#57d64b9ae3cff1d67eb067ae117dac087f5bd438"
+  integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@octokit/rest@^15.2.6":
   version "15.9.4"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-15.9.4.tgz#c6cf0f483275d9c798b18419b7c9d417493bb70f"
@@ -4900,12 +4907,12 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-redux@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.0.tgz#aa698a92b729315d22b34a0553d7e6533555cc03"
+redux@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.1.tgz#c08f4306826c49b5e9dc901dee0452ea8fce6197"
+  integrity sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==
   dependencies:
-    loose-envify "^1.1.0"
-    symbol-observable "^1.2.0"
+    "@babel/runtime" "^7.9.2"
 
 regenerate@^1.2.1:
   version "1.4.0"
@@ -4914,6 +4921,11 @@ regenerate@^1.2.1:
 regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
@@ -5523,10 +5535,6 @@ svgo@^0.7.0:
 symbol-observable@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.1.tgz#8340fc4702c3122df5d22288f88283f513d3fdd4"
-
-symbol-observable@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
 "symbol-tree@>= 3.1.0 < 4.0.0":
   version "3.2.2"

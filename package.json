@@ -60,7 +60,7 @@
     "electron-devtools-installer": "^2.1.0",
     "electron-squirrel-startup": "^1.0.0",
     "get-port-sync": "^1.0.0",
-    "jayson": "^2.0.6",
+    "jayson": "^2.1.2",
     "node-ssdp": "^3.3.0",
     "react": "^16",
     "react-dom": "^16",

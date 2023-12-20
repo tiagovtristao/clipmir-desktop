@@ -63,7 +63,7 @@
     "jayson": "^2.0.6",
     "node-ssdp": "^3.3.0",
     "react": "^16",
-    "react-dom": "^16",
+    "react-dom": "^16.4.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",

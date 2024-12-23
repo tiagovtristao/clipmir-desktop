@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "electron-compile": "^6.4.3",
-    "electron-devtools-installer": "^2.1.0",
+    "electron-devtools-installer": "^4.0.0",
     "electron-squirrel-startup": "^1.0.0",
     "get-port-sync": "^1.0.0",
     "jayson": "^2.0.6",
